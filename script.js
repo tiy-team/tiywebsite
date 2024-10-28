@@ -1,8 +1,6 @@
 document.getElementById('load-events').addEventListener('click', function() {
     const events = [
-        'Cultural Evening - November 15, 2024',
-        'Networking Event - December 1, 2024',
-        'Festival Celebration - January 10, 2025'
+        'Please follow instagram for more details ...'
     ];
 
     const eventList = document.getElementById('event-list');
