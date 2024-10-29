@@ -134,3 +134,20 @@ button:hover {
         margin: 5px 0;
     }
 }
+#whatsapp-groups ul {
+    list-style: none;
+    padding: 0;
+}
+
+#whatsapp-groups ul li {
+    margin: 5px 0;
+}
+
+#whatsapp-groups a {
+    color: #138f1d; /* Same color as theme */
+    text-decoration: none;
+}
+
+#whatsapp-groups a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
