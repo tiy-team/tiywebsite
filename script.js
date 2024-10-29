@@ -15,4 +15,6 @@ document.getElementById('load-events').addEventListener('click', function() {
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Thank you for your message!');
+     // Clear the form fields
+     document.getElementById('contact-form').reset();
 });
