@@ -1,20 +1,24 @@
-document.getElementById('load-events').addEventListener('click', function() {
-    const events = [
-        'Please follow instagram for more details ...'
-    ];
-
-    const eventList = document.getElementById('event-list');
-    eventList.innerHTML = ''; // Clear existing events
-    events.forEach(event => {
-        const li = document.createElement('li');
-        li.textContent = event;
-        eventList.appendChild(li);
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle email links to open in Gmail
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = this.href.replace('mailto:', '');
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank');
+        });
     });
-});
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your message!');
-     // Clear the form fields
-     document.getElementById('contact-form').reset();
+    // Add smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
