@@ -1,153 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-    background: linear-gradient(to right, #138f1d, #ffffff, #ff883e); /* Ireland flag colors */
-    color: black;
-    padding: 1rem;
-    text-align: center;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto 10px; /* Center logo and add margin */
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.card {
+  padding: 2em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.team-list {
-    list-style: none;
-    padding: 0;
-}
-
-.team-list li {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-}
-
-.team-list img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 50%; /* Make images circular */
-    margin-right: 10px; /* Space between image and text */
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: linear-gradient(to right, #138f1d, #ffffff, #ff883e); /* Ireland flag colors */
-    color: black;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
-    color: #138f1d; /* Use green color from the theme */
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.read-the-docs {
+  color: #888;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #138f1d; /* Green from Ireland flag */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
-
 button:hover {
-    background: #117a15; /* Darker green for hover effect */
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-}
-#whatsapp-groups ul {
-    list-style: none;
-    padding: 0;
-}
-
-#whatsapp-groups ul li {
-    margin: 5px 0;
-}
-
-#whatsapp-groups a {
-    color: #138f1d; /* Same color as theme */
-    text-decoration: none;
-}
-
-#whatsapp-groups a:hover {
-    text-decoration: underline; /* Underline on hover */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
