@@ -1,102 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telugu Ireland Yuvatha</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <img src="images/logo.png" alt="Telugu Ireland Yuvatha Logo" class="logo">
-        <h1>Welcome to the Telugu Ireland Yuvatha</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#whatsapp-groups">WhatsApp Groups</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <img
+        src="images/logo.png"
+        alt="Telugu Ireland Yuvatha Logo"
+        class="logo"
+      />
+      <p>
+        ఏ దేశమేగినా ఎందు కాలెడినా ఏ పీఠమెక్కినా, ఎవ్వరేమనినా, పొగడరా నీ తల్లి
+        భూమి భారతిని, నిలపరా నీ జాతి నిండు గౌరవము.
+      </p>
+      <h1 class="site-title">Welcome to the Telugu Ireland Yuvatha</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#whatsapp-groups">WhatsApp Groups</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We serve the Telugu community in Ireland through various initiatives and events, fostering networking and cultural exchange. Our mission is to connect Telugu-speaking individuals and families, providing support and resources to help them thrive in Ireland.</p>
-            <p>తెలుగు ఐర్లాండ్ యువత</p>
-            <p>తెలుగు వాళ్ళ ఐక్యత కోసం</p>
-            <p>తెలుగు సంప్రదాయాల సంరక్షణ కోసం</p>
-            <p>తెలుగు జాతి భవిష్యత్తు కోసం</p>
-            <p>జై హింద్, జై భారత్</p>
-        </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          We serve the Telugu community in Ireland through various initiatives
+          and events, fostering networking and cultural exchange. Our mission is
+          to connect Telugu-speaking individuals and families, providing support
+          and resources to help them thrive in Ireland.
+        </p>
+        <div class="telugu-text">
+          <p>తెలుగు ఐర్లాండ్ యువత</p>
+          <p>తెలుగు వాళ్ళ ఐక్యత కోసం</p>
+          <p>తెలుగు సంప్రదాయాల సంరక్షణ కోసం</p>
+          <p>తెలుగు జాతి భవిష్యత్తు కోసం</p>
+          <p>జై హింద్, జై భారత్</p>
+        </div>
+      </section>
 
-        <section id="events">
-            <h2>Upcoming Events</h2>
-            <ul id="event-list"></ul>
-            <button id="load-events">Load Events</button>
-        </section>
+      <section id="events">
+        <h2>Events</h2>
+        <div class="event-card">
+          <i class="fab fa-instagram"></i>
+          <h3>Stay Updated!</h3>
+          <p>Follow us on Instagram for the latest events and updates</p>
+          <a
+            href="https://www.instagram.com/telugu_ireland_yuvatha"
+            target="_blank"
+            class="instagram-link"
+          >
+            <i class="fab fa-instagram"></i> @telugu_ireland_yuvatha
+          </a>
+        </div>
+      </section>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <img src="images/ganesha.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup1.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup2.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup3.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup4.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup5.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup6.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup7.png" alt="Ganesh Festival">
-                <img src="images/ganeshgroup8.png" alt="Ganesh Festival">
-                <!-- More images can be added dynamically using PHP if desired -->
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="images/ganesha.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup1.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup2.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup3.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup4.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup5.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup6.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup7.png" alt="Ganesh Festival" />
+          <img src="images/ganeshgroup8.png" alt="Ganesh Festival" />
+        </div>
+      </section>
+
+      <section id="donate" class="donate-section">
+        <h2>Support Our Community</h2>
+        <div class="donate-card">
+          <div class="donate-header">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Make a Donation</h3>
+          </div>
+          <p>
+            Your support helps us organize cultural events and strengthen our
+            community
+          </p>
+          <div class="bank-details">
+            <h4>Bank Details</h4>
+            <div class="detail-row">
+              <span>Bank Name:</span>
+              <span>Bank of Ireland</span>
             </div>
-        </section>
+            <div class="detail-row">
+              <span>Account Name:</span>
+              <span>Telugu Ireland Yuvatha</span>
+            </div>
+            <div class="detail-row">
+              <span>IBAN:</span>
+              <span>*************</span>
+            </div>
+            <div class="detail-row">
+              <span>BIC:</span>
+              <span>*******</span>
+            </div>
+            <div class="detail-row">
+              <span>Account Number:</span>
+              <span>********</span>
+            </div>
+            <div class="detail-row">
+              <span>Sort Code:</span>
+              <span>*******</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="team">
-            <h2>Our Team</h2>
-            <ul class="team-list">
-                <li><strong>President: </strong> Venkat Kasturi</li>
-                <li><strong>Vice President: </strong> Ajay Polampalli</li>
-                <li><strong>Chief Advisor: </strong> Kiran Anugurthi</li>
-            </ul>
-        </section>
+      <section id="team">
+        <h2>Our Team</h2>
+        <ul class="team-list">
+          <li><strong>President: </strong> Venkat Kasturi</li>
+          <li><strong>Vice President: </strong> Ajay Polampalli</li>
+          <li>
+            <strong>Women's wing President: </strong> Rajarajeshwari Kommu
+          </li>
+          <li><strong>Chief Advisor & Strategist: </strong> Kiran Anugurthi</li>
+        </ul>
+      </section>
 
-        <section id="whatsapp-groups">
-            <h2>Join Our WhatsApp Groups</h2>
-            <ul>
-                <li><a href="https://chat.whatsapp.com/H3GO2GsI9lr8CZF0aO2BKG" target="_blank">Accommodation</a></li>
-                <li><a href="https://chat.whatsapp.com/Krxh9pC330yGokN2youazo" target="_blank">Arts</a></li>
-                <li><a href="https://chat.whatsapp.com/Gp170pmDzBR3YnAd91G4m7" target="_blank">Events</a></li>
-                <li><a href="https://chat.whatsapp.com/BavAJoTcBHXDc7FBiNreu3" target="_blank">Marketing</a></li>
-            </ul>
-        </section>
+      <section id="whatsapp-groups">
+        <h2>Join Our WhatsApp Groups</h2>
+        <div class="whatsapp-grid">
+          <a
+            href="https://chat.whatsapp.com/H3GO2GsI9lr8CZF0aO2BKG"
+            target="_blank"
+            class="whatsapp-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Accommodation</span>
+          </a>
+          <a
+            href="https://chat.whatsapp.com/Krxh9pC330yGokN2youazo"
+            target="_blank"
+            class="whatsapp-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Arts</span>
+          </a>
+          <a
+            href="https://chat.whatsapp.com/Gp170pmDzBR3YnAd91G4m7"
+            target="_blank"
+            class="whatsapp-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Events</span>
+          </a>
+          <a
+            href="https://chat.whatsapp.com/BavAJoTcBHXDc7FBiNreu3"
+            target="_blank"
+            class="whatsapp-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Marketing</span>
+          </a>
+        </div>
+      </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form" action="send_email.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=teluguirelandyuvatha@gmail.com"
+            target="_blank"
+            class="email-link"
+          >
+            <i class="fas fa-envelope"></i> teluguirelandyuvatha@gmail.com
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Telugu Ireland Yuvatha. All rights reserved.</p>
+      <div class="footer-content">
         <div class="social-links">
-            <a href="https://www.instagram.com/telugu_ireland_yuvatha" target="_blank">Instagram</a> | 
-            <a href="mailto:teluguirelandyuvatha@gmail.com">Email Us</a>
+          <a
+            href="https://www.instagram.com/telugu_ireland_yuvatha"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=teluguirelandyuvatha@gmail.com"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i> Email Us
+          </a>
         </div>
-        <p>Developed by TechVie</p> <!-- Added label for developer -->
-    </footer>    
-    
+        <p>&copy; 2024 Telugu Ireland Yuvatha. All rights reserved.</p>
+        <p class="developer">Developed by TechVie</p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
