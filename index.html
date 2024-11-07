@@ -11,6 +11,16 @@
     />
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
 
+    <!-- Structured Data for Organization with Logo -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Telugu Ireland Yuvatha",
+        "url": "https://www.teluguirelandyuvatha.com",
+        "logo": "https://www.teluguirelandyuvatha.com/images/logo.png"
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -195,24 +205,37 @@
     <footer>
       <div class="footer-content">
         <div class="social-links">
-          <a
-            href="https://www.instagram.com/telugu_ireland_yuvatha"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/telugu_ireland_yuvatha" target="_blank">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=communications@teluguirelandyuvatha.com"
-            target="_blank"
-          >
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=communications@teluguirelandyuvatha.com" target="_blank">
             <i class="fas fa-envelope"></i> Email Us
           </a>
         </div>
         <p>&copy; 2024 Telugu Ireland Yuvatha. All rights reserved.</p>
-        <p class="developer">Developed by Cloudesy Technologies</p>
+        <p class="developer">Developed by <span class="cloudesy">Cloudesy Technologies</span></p>
       </div>
+    
+      <style>
+        /* Styling for the entire footer text */
+        .developer {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+          font-weight: bold; /* Bold text */
+          font-size: 1.1rem; /* Slightly bigger font size */
+          color: #333; /* Dark gray for a modern look */
+          letter-spacing: 0.5px; /* Subtle spacing between letters */
+          text-align: center; /* Center the text */
+          padding: 10px 0; /* Adds some space around the text */
+        }
+    
+        /* Bold styling for "Cloudesy Technologies" */
+        .cloudesy {
+          font-weight: bold; /* Make "Cloudesy Technologies" bold */
+          font-size: 1.25rem; /* Slightly bigger size for emphasis */
+        }
+      </style>
     </footer>
-
+    
     <script src="script.js"></script>
   </body>
 </html>
